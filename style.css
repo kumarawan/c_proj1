@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(159, 159, 84); */
+}
+
+.main{
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    background-color: #d8d8d8;
+    
+}
+
+
+.myna{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #e9e8e8; */
+}
+
+.myna .navbar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myna .rnavbar {
+    display: flex;
+    gap: 25px;
+}
+.myna .rnavbar a{
+    text-decoration: none;
+    color: black;
+}
+.myna .rnavbar button{
+    padding: 2px 8px;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 12px;
+}
+.myna .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myna .text h1{
+    font-size: 40px;
+}
+.myna .text h3{
+    font-size: 15px;
+}
+.myna .text h1:nth-child(1){
+    padding-top: 30px;
+}
+.myna .text h3:nth-of-type(1){
+    padding-top: 10px;
+}
+.myna .text .btn button{
+    padding: 8px 15px;
+    margin-top: 15px;
+    border-radius: 100px;
+    border: none;
+}
+.myna .text .btn button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+.myna .image {
+    width: 100%;
+  
+    
+   
+   
+      
+}
+.myna .image img{
+    width: 100%;
+    height: 93vh;
+    bottom: 0;
+    position: absolute;
+}
+.nav{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav .lnav{
+    display: flex;
+    gap: 4px;
+}
+.nav .lnav i{
+    color: aqua;
+    transform: rotate(45deg);
+    font-size: 20px;
+}
+.nav .rnav{
+    display: flex;
+    gap: 25px;
+ 
+}
+.nav .rnav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.nav .rnav .icon{
+    padding: 0 10px;
+}
+.nav .rnav .icon i{
+    padding: 4px;
+    border-radius: 100px;
+    background-color: white;
+    
+}
+
+.main .master{
+    width: 100%; 
+    height: 100vh;
+    padding: 20px;
+}
+.main .master h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.main .master .rectangle{
+    height: 250px;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    position: relative;
+}
+.main .master .rectangle .rect{
+    height: 100%;
+    width: 230px;
+    border-radius: 30px;
+    position: absolute;
+}   
+.master .rectangle .r1{
+    left: 0;
+    background-color: rgb(0, 255, 42);
+    transform: rotate(-5deg);
+}
+.rectangle .rect:nth-child(1) img,
+.rectangle .rect:nth-child(2) img,
+.rectangle .rect:nth-child(3) img,
+.rectangle .rect:nth-child(4) img,
+.rectangle .rect:nth-child(5) img,
+.rectangle .rect:nth-child(6) img,
+.rectangle .rect:nth-child(7) img{
+    object-fit: cover;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.master .rectangle .r2{
+    left: 15%;
+    top: -27px;
+    transform: rotate(-5deg);
+    background-color: aqua;
+}
+.master .rectangle .r3{
+    left: 28%;
+    top: -28px;
+    transform: rotate(-5deg);
+    background-color: rgb(38, 0, 255);
+}
+.master .rectangle .r4{
+    left: 40%;
+    top: -28px;
+    transform: rotate(-3deg);
+    background-color: rgb(217, 255, 0);
+}
+.master .rectangle .r5{
+    left: 53%;
+    top: -25px;
+    transform: rotate(3deg);
+    background-color: rgb(217, 0, 255);
+}
+.master .rectangle .r6{
+    left: 67%;
+    top: -20px;
+    transform: rotate(5deg);
+    background-color: rgb(255, 0, 119);
+}
+.master .rectangle .r7{
+    right: 0;
+    transform: rotate(6deg);
+    background-color: green;
+}
+/* .rectangle .rect:hover{
+    background: linear-gradient(
+		to bottom,
+		#1473e6,
+		cubic-bezier(0.61, 1, 0.88, 1),
+		#247b5e
+	);
+    transform: scale(1.1, 1.1);
+} */
+.master .rectangle .rect .btn{
+    padding: 8px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.master .rectangle .rect .btn .arrow{
+    /* height: 40px;
+    width: 40px; */
+    /* background-color: black; */
+    border: 8px solid ;
+    position: absolute;
+    left: 40%;
+    top: 98%;
+    transform: rotate(-2deg);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent; 
+}
+.master .rectangle .rect:nth-child(7) .btn{
+    background-color: #2b2c2ce0;
+    color: rgb(191, 194, 196);
+}
+.master .rectangle .rect:nth-child(2) .btn{
+    background-color: #505254ba;
+}
+.master .rectangle .rect:nth-child(7) .arrow{
+    color: #2b2c2ce0;
+}
+.master .rectangle .rect:nth-child(2) .arrow{
+    color: #505254ba;
+}
+.master .rectangle .rect:hover img{
+    transform: scale(1.2);
+    box-shadow: 6px 4px 25px black;
+}
+.master .rectangle .rect:hover .btn{
+    transform: scale(1.05);
+    top: -30%;
+    opacity: 1;
+    box-shadow: 6px 4px 25px black;
+}
+
+.main .master p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+.master .btns{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.master .btns button{
+    padding: 8px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    border: none;
+}
+.master .btns button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+
+
+.spencer{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #d8d7d7; */
+    padding: 20px;
+}
+
+.spencer .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spencer h5{
+    opacity: .3;
+}
+.spencer h4:nth-last-of-type(1){
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.spencer h1{
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: -5px;
+}
+.spencer .top h1{
+    margin: 30px 0 35px 0;
+}
+.spencer .mid h1:nth-of-type(1){
+   margin-top: 50px;
+   opacity: 0.3;
+}
+.spencer .mid h1:nth-of-type(2){
+   opacity: 0.3;
+}
+.mid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards{
+    height: 200px;
+    width: 580px;
+    position: relative;
+    /* background-color: rgb(255, 67, 67); */
+}
+.cards .card{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.651);
+    /* background-color: rgb(114, 248, 81); */
+}
+.cards .c1{
+    left: 0%;
+    top: 10px;
+    transform: rotate(3deg);
+    background-color: rgb(210, 255, 104);
+}
+.cards .c2{
+    left: 25%;
+    top: -15px;
+     transform: rotate(-3deg);
+    background-color: rgb(157, 104, 255);
+}
+.cards .c3{
+    left: 45%;
+    top: 10px;
+     transform: rotate(4deg);
+    background-color: rgb(20, 119, 89);
+}
+.cards .c4{
+    right: 0;
+    top: -10px;
+     transform: rotate(-4deg);
+    background-color: rgb(129, 12, 119);
+}
+
+
+.trusted{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    /* background-color: #e9e8e8; */
+}
+.trusted h5{
+    opacity: 0.6;
+}
+
+.trusted img{
+    margin-top: 30px;
+    height: 60vh;
+    
+}
+.digital {
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 80px;
+}
+.digital h1{
+    font-size: 50px;
+    letter-spacing: -1px;
+}
+.digital .mid p{
+    font-size: 13px;
+    margin: 8px;
+}
+.digital .mid button{
+    padding: 5px 10px;
+    border-radius: 100px;
+    color: white;
+    font-size: 13px;
+    background-color: black;
+    border: none;
+}
+.digital .rect{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    /* background-color: rgb(6, 241, 163); */
+}
+.digital .rect .card{
+    width: 25%;
+    height: 100%;
+    
+    position: absolute;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.digital .rect .card:nth-child(1) img,
+.digital .rect .card:nth-child(2) img,
+.digital .rect .card:nth-child(3) img,
+.digital .rect .card:nth-child(4) img,
+.digital .rect .card:nth-child(5) img,
+.digital .rect .card:nth-child(6) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.digital .rect .card:hover img{
+    transform: scale(1.18);
+    box-shadow: -5px -10px 25px black;
+}
+
+.digital .rect .card:nth-child(1){
+    left: 5%;
+    bottom: -145px;
+    transform: rotate(-16deg);
+    z-index: 6;
+    background-color: #fa5656;
+}
+.digital .rect .card:nth-child(2){
+    left: 17%;
+    bottom: -60px;
+    transform: rotate(10deg);
+    z-index: 5;
+    background-color: #faad56;
+}
+.digital .rect .card:nth-child(3){
+    left: 28%;
+    bottom: -23px;
+    transform: rotate(-3deg);
+    z-index: 4;
+    background-color: #faf456;
+}
+.digital .rect .card:nth-child(4){
+    left: 45%;
+    bottom: -43px;
+    transform: rotate(5deg);
+    z-index: 2;
+    background-color: #7cfa56;
+}
+.digital .rect .card:nth-child(5){
+    left: 60%;
+    bottom: -80px;
+    transform: rotate(-5deg);
+    z-index: 1;
+    background-color: #8756fa;
+}
+.digital .rect .card:nth-child(6){
+    right: 10%;
+    bottom: -160px;
+    transform: rotate(12deg);
+    z-index: 3;
+    background-color: #56b3fa;
+}
